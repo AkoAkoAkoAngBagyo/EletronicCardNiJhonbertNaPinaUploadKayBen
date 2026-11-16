@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret Formula — Para kay Ma'am Roan</title>
+  <!-- Clean, friendly typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="appreciation.css" />
+</head>
+<body>
+
+  <div class="ocean-backdrop" aria-hidden="true">
+  
+    <svg class="flower-cloud cloud-1" viewBox="0 0 120 120" fill="none">
+      <circle cx="60" cy="30" r="22" fill="currentColor" />
+      <circle cx="88" cy="52" r="22" fill="currentColor" />
+      <circle cx="77" cy="84" r="22" fill="currentColor" />
+      <circle cx="43" cy="84" r="22" fill="currentColor" />
+      <circle cx="32" cy="52" r="22" fill="currentColor" />
+      <circle cx="60" cy="60" r="18" fill="#bfe9ec" />
+    </svg>
+
+    <svg class="flower-cloud cloud-2" viewBox="0 0 120 120" fill="none">
+      <circle cx="60" cy="30" r="22" fill="currentColor" />
+      <circle cx="88" cy="52" r="22" fill="currentColor" />
+      <circle cx="77" cy="84" r="22" fill="currentColor" />
+      <circle cx="43" cy="84" r="22" fill="currentColor" />
+      <circle cx="32" cy="52" r="22" fill="currentColor" />
+      <circle cx="60" cy="60" r="18" fill="#bfe9ec" />
+    </svg>
+
+    <div class="bubbles-layer" id="bubblesLayer"></div>
+  </div>
+
+  <main class="stage">
+
+    <header class="stage-header">
+      <span class="tag-pill">Secret Formula</span>
+      <h1 class="main-title">Sekreto ko kay <span>Ma'am Roan</span></h1>
+      <p class="step-hint" id="stepHint" aria-live="polite">
+        Tap the cork to open the bottle
+      </p>
+    </header>
+
+    <section class="bottle-stage" id="bottleStage" aria-label="Secret Formula Bottle">
+      <div class="bottle-assembly" id="bottleAssembly">
+
+        <button
+          type="button"
+          class="cork-btn"
+          id="corkBtn"
+          aria-label="Tap the cork to open the bottle"
+        >
+          <span class="cork-top"></span>
+          <span class="cork-body">
+            <span class="cork-speckle s1"></span>
+            <span class="cork-speckle s2"></span>
+            <span class="cork-speckle s3"></span>
+          </span>
+          <span class="tap-ring" id="corkRing" aria-hidden="true"></span>
+        </button>
+
+
+        <div
+          class="glass-bottle"
+          id="glassBottle"
+          role="button"
+          tabindex="-1"
+          aria-label="Tap the bottle to pull out the scroll"
+        >
+
+          <div class="bottle-rim"></div>
+          <div class="bottle-neck">
+            <div class="glass-shine-neck"></div>
+          </div>
+
+          <div class="bottle-body">
+
+            <div class="glass-highlight"></div>
+
+            <div class="scroll-roll" id="scrollRoll">
+              <div class="roll-end-left"></div>
+              <div class="roll-paper">
+                <div class="roll-ribbon">
+                  <span class="ribbon-knot"></span>
+                </div>
+              </div>
+              <div class="roll-end-right"></div>
+            </div>
+
+            <div class="bottle-label" aria-hidden="true">
+              <span>FORMULA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-surface" aria-hidden="true">
+        <div class="sand-mound"></div>
+        <div class="wood-plank"></div>
+      </div>
+    </section>
+
+    <article class="scroll-card hidden" id="scrollCard" aria-live="polite">
+
+      <div class="scroll-roller top-roller" aria-hidden="true">
+        <span class="roller-knob left"></span>
+        <span class="roller-bar"></span>
+        <span class="roller-knob right"></span>
+      </div>
+
+      <div class="parchment-sheet">
+
+        <svg class="watermark-doodle" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+
+          <path d="M14 28C14 19 22 14 32 14C42 14 50 19 50 28H14Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="25" cy="21" r="1.5" fill="currentColor"/>
+          <circle cx="32" cy="19" r="1.5" fill="currentColor"/>
+          <circle cx="39" cy="21" r="1.5" fill="currentColor"/>
+          <path d="M12 33C16 31 20 35 24 33C28 31 32 35 36 33C40 31 44 35 48 33C50 32 51 33 52 33" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="13" y="38" width="38" height="5" rx="2.5" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M15 47H49C49 50.5 45 53 32 53C19 53 15 50.5 15 47Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+
+        <header class="letter-head">
+          <p class="formula-stamp"> MENSAHE NG PASASALAMAT</p>
+          <h2 class="greeting">Hello, Ma'am Roan!</h2>
+          <div class="divider-line"></div>
+        </header>
+
+        <div class="letter-text">
+          <p>
+            Wala talaga akong mensahe sapagkat bilang lang ang interaksyon natin sa loob ng klase. Kung meron man, siguro ay ang pasasalamat ko sa paggabay sa'min sa loob ng dalawang semestre mula 1st year 2nd sem at sa kasalukuyan.
+          </p>
+
+          <p>
+            Maraming salamat po 'di lang sa pagtuturo sa'min ng mga lesson at 'di lang sa paggabay, kundi salamat na rin sa mga konsiderasyon na iyong ibinibigay at pagtitiyaga.
+          </p>
+
+          <p class="callout-note">
+            'Wag mo po sanang isipin na galit sa 'yo ang estudyante sa tuwing sila'y napagsasabihan kapag lumalabag sa iyong patakaran. Ito ang dahilan kung bakit nakakapag-focus kami sa iyong klase strikto ka po, pero mas natututo kami sa 'yo.
+          </p>
+
+          <p>
+            Salamat po sa lahat, at ikatutuwa ko kung sakaling maging guro po ulit kita sa kung ano mang subject.
+          </p>
+        </div>
+
+        <footer class="letter-foot">
+          <div class="signature-block">
+            <span class="sign-label">Lubos na nagpapasalamat,</span>
+            <span class="sign-name">Jb</span>
+          </div>
+
+          <button type="button" class="reset-btn" id="resetBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+            <span>Put back in bottle</span>
+          </button>
+        </footer>
+      </div>
+
+      <div class="scroll-roller bottom-roller" aria-hidden="true">
+        <span class="roller-knob left"></span>
+        <span class="roller-bar"></span>
+        <span class="roller-knob right"></span>
+      </div>
+    </article>
+  </main>
+  <script src="appreciation.js"></script>
+</body>
+</html>
